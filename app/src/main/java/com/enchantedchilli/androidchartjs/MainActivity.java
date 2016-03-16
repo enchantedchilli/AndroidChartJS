@@ -8,8 +8,11 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.webkit.WebView;
 
 public class MainActivity extends AppCompatActivity {
+
+    WebView wvMain;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,7 +30,9 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        //test
+        //get a reference to our WebView
+        wvMain = (WebView)findViewById(R.id.wvMain);
+
     }
 
     @Override
